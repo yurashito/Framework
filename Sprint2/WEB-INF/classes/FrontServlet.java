@@ -12,7 +12,7 @@ public class FrontServlet extends HttpServlet{
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
             PrintWriter out = response.getWriter();
-            String url=request.getRequestURL().toString();
+            String url=request.getPathInfo();
             try {
                 out.println("resultat: "+new Utilitaire().url(url));
             }catch (Exception e){
