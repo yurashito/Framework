@@ -10,6 +10,6 @@
     </servlet-mapping>
 
     <domaine>
-        <nom>http://localhost:8080/Test</nom>
+        <nom>http://localhost:8080/Sprint1</nom>
     </domaine>
 </web-app>
