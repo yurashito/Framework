@@ -2,7 +2,7 @@
 <web-app >
     <servlet>
         <servlet-name>Test</servlet-name>
-        <servlet-class>com.example.FrontServlet</servlet-class>
+        <servlet-class>etu1852.framework.servlet.FrontServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Test</servlet-name>
@@ -10,6 +10,6 @@
     </servlet-mapping>
 
     <domaine>
-        <nom>http://localhost:8080/Sprint1</nom>
+        <nom>http://localhost:8080/Sprint1/</nom>
     </domaine>
 </web-app>

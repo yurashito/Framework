@@ -11,7 +11,7 @@ public class FrontServlet extends HttpServlet{
             PrintWriter out = response.getWriter();
             String url=request.getPathInfo();
             try {
-                out.println("nom du domaine: "+new Utilitaire().url(url));
+                out.println("resultat: "+new Utilitaire().url(url));
             }catch (Exception e){
                 out.println(e);
             }
