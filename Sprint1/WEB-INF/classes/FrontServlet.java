@@ -1,4 +1,4 @@
-package com.example;
+package etu1852.framework.servlet;
 import fonction.*;
 import java.io.*;
 import javax.servlet.ServletException;
@@ -19,19 +19,21 @@ public class FrontServlet extends HttpServlet{
     }
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        PrintWriter out = response.getWriter();
         try {
             processRequest(request, response);
         } catch (Exception e) {
-            Logger.getLogger(FrontServlet.class.getName()).log(Level.SEVERE, null, ex);
+            out.println(e);
         }
 
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        PrintWriter out = response.getWriter();
         try {
             processRequest(request, response);
         } catch (Exception e) {
-            Logger.getLogger(FrontServlet.class.getName()).log(Level.SEVERE, null, ex);
+            out.println(e);
         }
     }
 
